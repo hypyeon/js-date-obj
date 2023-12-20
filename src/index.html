@@ -22,6 +22,12 @@
   </section>
   <section class="hidden flex flex-center" id="weekday-app">
     <form class="flex col flex-center" id="weekday-form">
+      <ul>
+        <li>▪️ Type in a year, a month, and a date.</li>
+        <li>▪️ The result will show which day of the week it is.</li>
+        <li>▪️ For example, type a birthday to find out which day one was born!</li>
+        <li>▪️ This application currently only works for dates only from the year of 1970.</li>
+      </ul>
       <div class="flex" id="YMD">
         <div>
           <label for="year">Year:</label>
@@ -48,7 +54,51 @@
       </div>
     </form>
   </section>
-  <section class="hidden" id="daycount-app">
+  <section class="flex col flex-center" id="daycount-app">
+    <div class="flex flex-center" id="cal">
+      <div class="calType flex flex-center" id="calTwo">
+        <p>Two Dates</p>
+      </div>
+      <div class="calType flex flex-center" id="calNow">
+        <p>A Date and Now</p>
+      </div>
+    </div>
+    <form class="flex col flex-center" id="daycount-form">
+      <div class="hidden" id="daycount-options">
+        <div class="flex col flex-center">
+          <div class="daycount-option" id="daycount-option-1">
+            <div>
+              <label for="date1">Date 1:</label>
+              <input type="date" id="date1">  
+            </div>
+            <div>
+              <label for="date2">Date 2:</label>
+              <input type="date" id="date2">  
+            </div>
+            <div>
+              <button id="cal-1">Calculate</button>
+              <button id="reset-1">New</button>  
+            </div> 
+          </div>
+          <div class="daycount-option" id="daycount-option-2">
+            <div>
+              <label for="date">Date:</label>
+              <input type="date" id="date">  
+            </div>
+            <div>
+              <button id="cal-2">Calculate</button>
+              <button id="reset-2">New</button>  
+            </div> 
+          </div>  
+        </div> 
+      </div>
+      <div id="daycount-result">
+        <p id="daycount-result-p"></p>
+      </div>
+      <div>
+        <button id="goBack">Go Back</button>
+      </div>
+    </form> 
 
   </section>
   <section class="hidden" id="timezone-app">

@@ -2,7 +2,6 @@
 /*
 $secondaryFont: ;
 $primaryColor: ;
-$secondaryColor: ;
 */
 * {
   box-sizing: border-box;
@@ -43,8 +42,12 @@ section {
   background-color: rgb(103, 192, 164);
 }
 
-#weekday-app form {
+#weekday-app #weekday-form {
   gap: 3rem;
+}
+#weekday-app #weekday-form ul {
+  list-style: none;
+  font-size: 0.75rem;
 }
 #weekday-app #YMD {
   gap: 1rem;
@@ -62,6 +65,44 @@ section {
   border-radius: 8px;
 }
 #weekday-app button {
+  padding: 0.25rem 1rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+#daycount-app {
+  gap: 3rem;
+}
+#daycount-app #cal {
+  gap: 1rem;
+}
+#daycount-app #cal .calType {
+  padding: 1rem;
+  background-color: rgb(103, 192, 164);
+  width: 12rem;
+  height: 6rem;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+}
+#daycount-app #cal :hover {
+  background-color: rgb(194, 235, 221);
+  color: black;
+}
+#daycount-app #daycount-form {
+  gap: 2rem;
+}
+#daycount-app #daycount-form #daycount-options {
+  gap: 1rem;
+}
+#daycount-app #daycount-form button {
+  margin-top: 1rem;
   padding: 0.25rem 1rem;
   background-color: black;
   color: white;
