@@ -21,11 +21,11 @@
     </div>
   </section>
   <section class="hidden flex flex-center" id="weekday-app">
-    <form class="flex col flex-center">
+    <form class="flex col flex-center" id="weekday-form">
       <div class="flex" id="YMD">
         <div>
           <label for="year">Year:</label>
-          <input type="number" name="year" id="year" min="1900">  
+          <input type="number" name="year" id="year" min="1970">  
         </div>
         <div>
           <label for="month">Month:</label>
@@ -36,12 +36,15 @@
           <input type="number" name="date" id="date" min="1" max="31">  
         </div>  
       </div>
-      <div id="weekday-result">
-        <p></p>
+      <div class="flex flex-center" id="weekday-result">
+        <p id="weekday-result-p"></p>
       </div>
       <div>
         <button type="submit">OK</button>
-        <button type="reset">Go back</button>  
+        <button type="reset">New Date</button>  
+      </div>
+      <div>
+        <button id="goBack">Go Back</button>
       </div>
     </form>
   </section>
