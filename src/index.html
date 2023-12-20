@@ -3,9 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Date Obj</title>
 </head>
 <body>
-  
+  <form id="main">
+    <h1>Choose the application.</h1>
+    <div>
+      <input type="radio" name="app" id="weekday">
+      <label for="weekday">Weekday Calculator</label>
+    </div>
+    <div>
+      <input type="radio" name="app" id="daycount">
+      <label for="daycount">D-day Calculator</label>
+    </div>
+    <div>
+      <input type="radio" name="app" id="timezone">
+      <label for="timezone">Timezone Calculator</label>
+    </div>
+    <button type="submit">Next</button>
+  </form>
+  <section class="hidden" id="weekday-app">
+    <form>
+      <label for="year">Year:</label>
+      <input type="number" name="year" id="year" min="1900">
+      <label for="month">Month:</label>
+      <input type="number" name="month" id="month" min="1" max="12">
+      <label for="date">Date:</label>
+      <input type="number" name="date" id="date" min="1" max="31">
+      <button type="submit">OK</button>
+    </form>
+    <div id="weekday-result">
+
+    </div>
+  </section>
+  <section id="daycount-app">
+
+  </section>
+  <section id="timezone-app">
+
+  </section>
 </body>
 </html>
