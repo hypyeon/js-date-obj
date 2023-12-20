@@ -5,41 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Date Obj</title>
 </head>
-<body>
-  <form id="main">
-    <h1>Choose the application.</h1>
-    <div>
-      <input type="radio" name="app" id="weekday">
-      <label for="weekday">Weekday Calculator</label>
+<body class="flex flex-center">
+  <section class="flex col flex-center" id="landing">
+    <h1>Choose an application &#10024;</h1>
+    <div id="apps" class="flex">
+      <div class="app" id="weekday">
+        <p>Weekday<br>Calculator</p>
+      </div>
+      <div class="app" id="daycount">
+        <p>D-day<br>Calculator</p>
+      </div>
+      <div class="app" id="timezone">
+        <p>Timezone<br>Calculator</p>
+      </div>  
     </div>
-    <div>
-      <input type="radio" name="app" id="daycount">
-      <label for="daycount">D-day Calculator</label>
-    </div>
-    <div>
-      <input type="radio" name="app" id="timezone">
-      <label for="timezone">Timezone Calculator</label>
-    </div>
-    <button type="submit">Next</button>
-  </form>
-  <section class="hidden" id="weekday-app">
-    <form>
-      <label for="year">Year:</label>
-      <input type="number" name="year" id="year" min="1900">
-      <label for="month">Month:</label>
-      <input type="number" name="month" id="month" min="1" max="12">
-      <label for="date">Date:</label>
-      <input type="number" name="date" id="date" min="1" max="31">
-      <button type="submit">OK</button>
+  </section>
+  <section class="hidden flex flex-center" id="weekday-app">
+    <form class="flex col flex-center">
+      <div class="flex" id="YMD">
+        <div>
+          <label for="year">Year:</label>
+          <input type="number" name="year" id="year" min="1900">  
+        </div>
+        <div>
+          <label for="month">Month:</label>
+          <input type="number" name="month" id="month" min="1" max="12">  
+        </div>
+        <div>
+          <label for="date">Date:</label>
+          <input type="number" name="date" id="date" min="1" max="31">  
+        </div>  
+      </div>
+      <div id="weekday-result">
+        <p></p>
+      </div>
+      <div>
+        <button type="submit">OK</button>
+        <button type="reset">Go back</button>  
+      </div>
     </form>
-    <div id="weekday-result">
-
-    </div>
   </section>
-  <section id="daycount-app">
+  <section class="hidden" id="daycount-app">
 
   </section>
-  <section id="timezone-app">
+  <section class="hidden" id="timezone-app">
 
   </section>
 </body>

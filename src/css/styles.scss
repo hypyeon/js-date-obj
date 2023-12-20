@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,400;0,700;1,400&display=swap');
+$primaryFont: 'Roboto Mono', monospace;
+;
 /*
-$primaryFont: ;
 $secondaryFont: ;
 $primaryColor: ;
 $secondaryColor: ;
@@ -13,11 +15,74 @@ $secondaryColor: ;
         text-decoration: none;
     }
 }
-
+@mixin buttonStyle {
+    padding: .25rem 1rem;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-family: $primaryFont;
+    font-size: .9rem;
+    letter-spacing: .5px;
+}
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(226, 238, 234);
+    font-family: $primaryFont;
+}
+section {
+    width: 60vw;
+    height: 60vh;
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 2px solid black;
+    box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.5);
+}
+#landing {
+    gap: 1rem;
+    #apps {
+        gap: 1rem;
+        .app {
+            background-color: rgb(204, 241, 229);
+            padding: 3rem 1rem;
+            text-align: center;
+            border: 2px solid rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            cursor: pointer;
+        }
+        :hover {
+            background-color: rgb(103, 192, 164);
+        }
+    }
+}
+#weekday-app {
+    form {
+        gap: 3rem;
+    }
+    #YMD {
+        gap: 1rem;
+        input[type="number"] {
+            width: 4rem;
+            border: 1px solid rgb(103, 192, 164);
+            border-radius: 3px;
+            padding: .25rem;
+        }  
+    }
+    #weekday-result {
+        background-color: rgb(194, 235, 221);
+        width: 40vw;
+        height: 3rem;
+        border-radius: 8px;
+    }
+    button {
+        @include buttonStyle;
+    }
 }
 .flex {
     display: flex;
