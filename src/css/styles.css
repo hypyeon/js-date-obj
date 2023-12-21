@@ -101,8 +101,14 @@ section {
 #daycount-app #daycount-form #daycount-options {
   gap: 1rem;
 }
+#daycount-app #daycount-form #daycount-result {
+  background-color: rgb(194, 235, 221);
+  width: 40vw;
+  height: 3rem;
+  border-radius: 8px;
+}
 #daycount-app #daycount-form button {
-  margin-top: 1rem;
+  margin: 1rem auto;
   padding: 0.25rem 1rem;
   background-color: black;
   color: white;
@@ -150,4 +156,13 @@ section {
 
 .hidden {
   display: none;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+.goBack {
+  background-color: white;
+  color: black;
 }/*# sourceMappingURL=styles.css.map */

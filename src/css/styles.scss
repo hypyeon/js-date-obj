@@ -111,8 +111,14 @@ section {
         #daycount-options {
             gap: 1rem;
         }
+        #daycount-result {
+            background-color: rgb(194, 235, 221);
+            width: 40vw;
+            height: 3rem;
+            border-radius: 8px;
+        }
         button {
-            margin-top: 1rem;
+            margin: 1rem auto;
             @include buttonStyle;
         }
     }
@@ -141,4 +147,11 @@ section {
 }
 .hidden {
     display: none;
+}
+.gap-2 {
+    gap: 2rem;
+}
+.goBack {
+    background-color: white;
+    color: black;
 }
